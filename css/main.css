@@ -436,7 +436,8 @@ form input {
   background-color: rgba(255,255,255,0);
   border: 1px solid #5EC3C5;
   font-family: 'Advent Pro', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 1.4rem;
   color: #5EC3C5;
   text-transform: uppercase;
   text-align: center;
