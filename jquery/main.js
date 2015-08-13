@@ -53,8 +53,9 @@ $(window).on('scroll',function(){
 	if (scrollHeight <= navHeight) {
 		$('nav').removeClass('scrolled');
 		console.log(scrollHeight);
-// 	// Else
-// 		// Remove the class that fixes the nav to the top
+	}
+	if ($('body').hasClass('active')){
+		$('nav').removeClass('scrolled');
 	}
 });
 	// pull the data dash from that list item
@@ -77,4 +78,12 @@ $('.contact_form p').on('click',function (){
 	// remove show-modal class from modal
 	$('.modal').removeClass('show_modal');
 	$('.contact_form').removeClass('show_contact_form');
+});
+
+$('.hamburger').on('click',function(){
+	$('body').addClass('active');
+});
+$('.sidebar p').on('click', function (e){
+	e.preventDefault();
+	$('body').removeClass('active');
 });

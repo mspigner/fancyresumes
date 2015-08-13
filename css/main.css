@@ -353,7 +353,7 @@ nav img {
   z-index: 150;
   position: absolute;
   clear:both;
-  height: 2580px;
+  height: 2590px;
   width: 100%;
   visibility: hidden;
   opacity: 0;
@@ -459,6 +459,77 @@ form input {
   color: black;
   vertical-align: center;
 }
+/* Hamburger Menu - Mobile Only ================================================================ */
+.hamburger {
+  cursor: pointer;
+  display: none;
+  float: left;
+  width: 9%;
+  margin: 9% 0 5% 4%;
+}
+
+.line {
+  border-bottom: 1px solid white;
+  width: 25px;
+  margin-bottom: 6px;
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+.sidebar {
+  width: 150px;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  transform: translateX(-250%);
+  display:none;
+  z-index: 175;
+  -webkit-box-shadow: 25px 14px 26px 19px rgba(0,0,0,0.2);
+  -moz-box-shadow: 25px 14px 26px 19px rgba(0,0,0,0.2);
+    box-shadow: 25px 14px 26px 19px rgba(0,0,0,0.2);
+
+}
+.sidebar li {
+  list-style: none;
+  color: gray;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 2%;
+}
+.sidebar a {
+  text-decoration: none;
+  color: gray;
+}
+.sidebar p {
+    color: gray;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 100;
+  margin-left: 5%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-transform: none;
+  font-size: 20px;
+}
+
+.sidebar{
+  transition: all 300ms ease-in-out;
+
+}
+
+.active .sidebar {
+  transform: translateX(0);
+}
+
 /*Animations ================================================================ */
 .shop:hover {
   background-color: white;
@@ -623,9 +694,18 @@ nav li:hover {
   width: 150%;
   margin: 12% 180%;
 }
+.logo {
+  width: 85%;
+}
 .logo img {
-  width: 200%;
-  margin: 12% 150%;
+  width: auto;
+  margin: 2% 15% 2% 15%;
+}
+.hamburger {
+  display: inline-block;
+}
+.sidebar {
+  display: inline-block;
 }
 }
 
