@@ -17,6 +17,9 @@ $('nav li').on('click', function(){
 	}
 });
 
+$('.title_section img').on('click', function(){
+	$('html, body').animate({scrollTop: '615px'}, 800);
+});
 
 var navHeight = $('nav').offset().top;
 console.log(navHeight);
@@ -57,4 +60,21 @@ $(window).on('scroll',function(){
 	// pull the data dash from that list item
 	// scroll down to the corresponding section
 	// position the window so the top of that window is at the top of the screen.
-
+$('#contact').on('click',function(){
+	// add show-modal class to modal
+	$('.modal').addClass('show_modal');
+	$('.contact_form').addClass('show_contact_form');
+});
+// when close button is clicked
+$('#send').on('click', function(){
+	// $('form').addClass('hide');
+	// $('.contact_form h1').addClass('hide');
+	$('#form_message').removeClass('hide');
+	// $('.modal').removeClass('show_modal');
+	// $('.contact_form').removeClass('show_contact_form');
+})
+$('.contact_form p').on('click',function (){
+	// remove show-modal class from modal
+	$('.modal').removeClass('show_modal');
+	$('.contact_form').removeClass('show_contact_form');
+});

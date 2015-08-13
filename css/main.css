@@ -49,8 +49,7 @@ nav li, nav ul {
 }
 nav a {
   text-decoration: none;
-/*  color: white;*/
-color: purple;
+  color: white;
 }
 
 nav ul {
@@ -69,6 +68,13 @@ hr {
   border: 1px solid white;
   width: 100%;
   z-index: 15;
+}
+.title_section img {
+  width: 60px;
+  margin: 30px 48%;
+}
+.title_section img:hover {
+  cursor: pointer;
 }
 
 /* Text Styles
@@ -335,7 +341,114 @@ nav img {
   margin: 3% 20%;
 }
 
+/* Form
+   ================================================================ */
+.modal {
+  background-color: black;
+  z-index: 150;
+  position: absolute;
+  clear:both;
+  height: 2580px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+.show_modal {
+  visibility: visible;
+  opacity: 0.8;
+}
 
+.contact_form {
+  width: 60%;
+  margin: 2% 20%;
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 155;
+  top: 19%;
+  border: 1px solid white;
+  padding: 2% 5%;
+  background-color: #F5F4F3;
+  -webkit-box-shadow: 12px 14px 14px -6px rgba(100,100,100,0.8);
+   -moz-box-shadow: 12px 14px 14px -6px rgba(100,100,100,0.8);
+        box-shadow: 12px 14px 14px -6px rgba(100,100,100,0.8);
+}
+.contact_form p {
+  font-size: 3rem;
+  color: gray;
+  padding: 0;
+  margin: 0;
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 100;
+  height: 35px;
+}
+.contact_form h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  height: 50px;
+  color: #CC38A6;
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+}
+.contact_form p:hover {
+  cursor: pointer;
+}
+.show_contact_form {
+  visibility: visible;
+  opacity: 1;
+}
+form {
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 100;
+
+}
+form input {
+  width: 100%;
+  border: 1px solid gray;
+  margin-bottom: 4%;
+  height: 44px;
+  background-color: rgba(255,255,255,0);
+  color: black;
+    font-family: 'Advent Pro', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.form_left {
+  float: left;
+  width: 38%;
+}
+.form_right {
+  float: right;
+  width: 60%;
+}
+#form_message {
+  width: 100%;
+  height: 150px;
+  font-size: 1rem;
+}
+#send {
+  clear:both;
+  width: 40%;
+  margin: 2% 30%;
+  background-color: rgba(255,255,255,0);
+  border: 1px solid #5EC3C5;
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 400;
+  color: #5EC3C5;
+  text-transform: uppercase;
+  text-align: center;
+}
+#form_message {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
 /*Animations ================================================================ */
 .shop:hover {
   background-color: white;
@@ -373,7 +486,12 @@ nav li:hover {
 .scrolled li {
   margin-top: 1%;
 }
-
+.hide {
+  display: none;
+}
+.show {
+  display: inline-block;
+}
 
 
 

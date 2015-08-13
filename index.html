@@ -16,6 +16,7 @@
 	   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 	   <!-- Handwritten Script Options -->
 	   <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Handlee|Bad+Script' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
    <!--  <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" /> --> <!-- Site icon that appears next to the title in tab -->
 
@@ -24,6 +25,23 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<div class="modal"></div>
+	<div class="contact_form clearfix">
+		<p>x</p>
+		<h1>Let's Chat!</h1>
+				<form class="clearfix" action="http://formspree.io/fancyschmancyresumes@gmail.com" method="POST">
+					<div class="form_left">
+						<input type="text" name="name" placeholder="Your Name" id="form_name">
+						<input type="email"name="_replyto"placeholder="Your Email" id="form_email">
+						<input type="text" name="subject" placeholder="Subject" id="form_subject">
+					</div>
+					<div class="form_right">
+						<input type="text" name="message" placeholder="Mesage" maxlength="900" id="form_message" rows="10" collumns="80" wrap="hard">
+					    <input type="submit" value="Send" id="send">
+				    </div>
+				</form>
+			<p id="form_message" class="hide"> Thanks! You'll be hearing from me soon.</p>
+		</div>
 	<div id="background_image">
 		<div id="background_color">
 			<nav>
@@ -36,13 +54,14 @@
 					<li> <a href="https://www.etsy.com/shop/FancyShmancyResumes?ref=hdr_shop_menu">Shop</a></li>
 					<li data-section="video_section">Tips</li>
 					<li data-section="about_section">About</li>
-					<li>Contact</li>
+					<li id="contact">Contact</li>
 				</ul>
 			</nav>
 
 			<div class="title_section">
 				<h1>Let's get your resume to the top of the pile.</h1>
 				<button class="shop"> <a href="https://www.etsy.com/shop/FancyShmancyResumes?ref=hdr_shop_menu">SHOP NOW</a></button>
+				<img src="images/Down_Arrow.png" alt="">
 			</div>
 		</div>
 	</div>
@@ -104,7 +123,7 @@
 			<li> <a href="michellespigner.com">Mischa's Portfolio</a></li>
 		</ul>
 	</footer>
-	<script src="jquery/jquery-2.1.4.js"></script>
-<script src="jquery/main.js"></script>
+		<script src="jquery/jquery-2.1.4.js"></script>
+		<script src="jquery/main.js"></script>
 </body>
 </html>
