@@ -428,7 +428,7 @@ form input {
   color: black;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  text-transform: capitalize;
+  text-transform: lowercase;
 }
 .form_left {
   float: left;
@@ -687,7 +687,7 @@ nav li:hover {
   .resume_section img:first-child {
     margin-left:0;
   }
-    .resume_section img:last-child {
+  .resume_section img:last-child {
     margin-right:0;
   }
   h3 {
@@ -747,7 +747,17 @@ nav li:hover {
   display: inline-block;
 }
 .modal {
-  height: 3300px;
+  height: 3580px;
 }
+}
+@media only screen and (max-width: 450px) {
+  .modal {
+    height: 3500px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .modal {
+    height: 3320px;
+  }
 }
 
