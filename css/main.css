@@ -494,7 +494,7 @@ form input {
   top: 0;
   left: 0;
   padding: 20px 0;
-  transform: translateX(-250%);
+  transform: translateX(-100%);
   display:none;
   z-index: 175;
   -webkit-box-shadow: 25px 14px 26px 19px rgba(0,0,0,0.2);
