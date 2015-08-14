@@ -487,15 +487,17 @@ form input {
   margin-bottom: 0;
 }
 .sidebar {
-  width: 150px;
+  width: 180px;
   height: 100%;
   background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   padding: 20px 0;
-  transform: translateX(-100%);
-  display:none;
+  transform: translateX(-200%);
+  -ms-transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+
   z-index: 175;
   -webkit-box-shadow: 25px 14px 26px 19px rgba(0,0,0,0.2);
   -moz-box-shadow: 25px 14px 26px 19px rgba(0,0,0,0.2);
@@ -506,7 +508,7 @@ form input {
   list-style: none;
   color: gray;
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 1.2rem;
   margin-bottom: 2%;
@@ -521,10 +523,12 @@ form input {
 .sidebar p {
     color: gray;
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-weight: 100;
-  margin-left: 5%;
+  font-weight: 400;
+  margin-left: 8%;
 }
-
+.sidebar p:hover {
+  cursor: pointer;
+}
 .close {
   position: absolute;
   top: 10px;
@@ -540,6 +544,8 @@ form input {
 
 .active .sidebar {
   transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
 }
 
 /*Animations ================================================================ */
@@ -651,7 +657,21 @@ nav li:hover {
     padding-left: 34%;
   }*/
 }
-
+@media only screen and (max-width: 700px) {
+  .contact_form {
+    width: 85%;
+    margin: 0 7.5%;
+    top: 5%;
+  }
+  .form_left {
+    float: none;
+    width: 100%;
+  }
+  .form_right {
+    float: none;
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 550px) {
   nav ul {
     display: none;
@@ -726,8 +746,8 @@ nav li:hover {
 .hamburger {
   display: inline-block;
 }
-.sidebar {
-  display: inline-block;
+.modal {
+  height: 3300px;
 }
 }
 

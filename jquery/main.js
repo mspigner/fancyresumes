@@ -83,6 +83,9 @@ $('.contact_form p').on('click',function (){
 	// remove show-modal class from modal
 	$('.modal').removeClass('show_modal');
 	$('.contact_form').removeClass('show_contact_form');
+	if ($('body').hasClass('active')){
+		$('body').removeClass('active');
+	}
 });
 
 $('.hamburger').on('click',function(){
