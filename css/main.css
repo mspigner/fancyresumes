@@ -362,7 +362,7 @@ nav img {
   z-index: 250;
   position: absolute;
   clear:both;
-  height: 2590px;
+  height: 2990px;
   width: 100%;
   visibility: hidden;
   opacity: 0;
@@ -593,10 +593,23 @@ nav li:hover {
 }
 
 /*Mobile Optimization*/
+@media only screen and (max-width: 1225px) {
+  .modal {
+    height: 2920px;
+  }
+}
+@media only screen and (max-width: 1175px) {
+  .modal {
+    height: 2850px;
+  }
+}
 @media only screen and (max-width: 1080px) {
   h3 {
     font-size: 4rem;
     line-height: 3.6rem;
+  }
+  .modal {
+    height: 2775px;
   }
 /*  #about_name {
     padding-left: 35%;
@@ -615,10 +628,27 @@ nav li:hover {
 .scrolled #mini_logo {
     margin-top: 1.5%;
   }
+  .modal {
+    height: 2705px;
+  }
 }
+
 @media only screen and (max-width: 960) {
 .scrolled #mini_logo {
     margin-top: 2%;
+  }
+.modal {
+  height: 2705px;
+}
+}
+@media only screen and (max-width: 950px) {
+  .modal {
+    height: 2610px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .modal {
+    height: 2524px;
   }
 }
 @media only screen and (max-width: 813px) {
@@ -634,7 +664,7 @@ nav li:hover {
     top: 22%;
   }
   .modal {
-    height: 2451px;
+    height: 2494px;
   }
   footer p {
     margin-left: 1%;
@@ -670,6 +700,9 @@ nav li:hover {
   .form_right {
     float: none;
     width: 100%;
+  }
+  .modal {
+    height: 2410px;
   }
 }
 @media only screen and (max-width: 550px) {
