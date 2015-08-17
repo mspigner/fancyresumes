@@ -1,5 +1,5 @@
 
-$('li_data').on('click', function(){
+$('.li_data').on('click', function(){
 // When you click on the nav items
 	var matchingDiv = $(this).data('section');
 	console.log(matchingDiv);
