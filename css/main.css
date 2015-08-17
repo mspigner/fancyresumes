@@ -790,7 +790,7 @@ nav li:hover {
 }
 @media only screen and (max-width: 420px) {
   .modal {
-    height: 3320px;
+    height: 3250px;
   }
 }
 
