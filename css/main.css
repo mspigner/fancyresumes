@@ -38,11 +38,19 @@ html {
 }
 nav {
 height: 93px;
+-webkit-transition: all 400ms ease;
+-o-transition: all 400ms ease;
+transition: all 400ms ease;
 }
 .logo {
   float: left;
-  width: 20%;
+  width: 40%;
 }
+/*.logo img {
+  width: 70%;
+  height: 70%;
+  margin: 4% 15%;
+}*/
  
 nav li, nav ul {
   display: inline-block;
@@ -53,10 +61,16 @@ nav a {
 }
 
 nav ul {
-  width: 80%;
+  width: 60%;
   text-align: right;
   z-index: 15;
+  margin-top: 25px;
 }
+
+#tips_li {
+  display: none;
+}
+
 .title_section h1 {
   clear: both;
   z-index: 20;
@@ -70,8 +84,8 @@ hr {
   z-index: 15;
 }
 .title_section img {
-  width: 60px;
-  margin: 30px 48%;
+  width: 7%;
+  margin: 30px 46.5%;
 }
 .title_section img:hover {
   cursor: pointer;
@@ -167,7 +181,7 @@ nav li:last-child {
   }
   .resume_section {
     background-color: #5EC3C5;
-    height:650px;
+    height:100%;
     -webkit-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
@@ -175,14 +189,14 @@ nav li:last-child {
   .resume_images {
     padding: 1% 0 1% 0;
     clear: both;
-    width: 80%;
-    margin: 0 10%;
+    width: 95%;
+    margin: 0 2.5%;
   }
   .resume_section img {
     float: left;
-    width: 305px;
-    height: 400px;
-    margin-right:1.57%;
+    width: 32%;
+    height: 100%;
+    margin-right:1%;
     border: 1px solid rgba(125,125,125,0.5);
     -webkit-box-shadow: 12px 14px 14px -6px rgba(0,0,0,0.2);
    -moz-box-shadow: 12px 14px 14px -6px rgba(0,0,0,0.2);
@@ -190,7 +204,10 @@ nav li:last-child {
 
   }
   .resume_section img:first-child {
-    margin-left: 1.57%;
+    margin-left: 1%;
+  }
+  .resume_section img:last-child {
+    margin-right: 0;
   }
   .resume_section p, .resume_section a {
     font-family: 'Lato', sans-serif;
@@ -208,14 +225,15 @@ nav li:last-child {
    ================================================================ */
 .video_section {
   clear:both;
-  height:585px;
+  height:100%;
+  display: none;
 }
 .video {
   position: relative;
   margin: 6% 10%;
   overflow: hidden;
   width: 80%;
-  height: 500px;
+  height: 100%;
 }
 .video img {
   width: 100%;
@@ -248,8 +266,8 @@ h3 {
   margin: 6% 0;
 }
 #profile_pic {
-  width: 70%;
-  margin-left: 26%;
+  width: 75%;
+  margin-left: 22%;
 }
 .about_text {
   float:right;
@@ -269,8 +287,8 @@ h3 {
   font-weight: 400;
 }
 #about_name {
-  width: 25%;
-  padding-left: 51%;
+  width: 100%;
+  padding-left: 50%;
   font-family: 'Shadows Into Light', cursive;
   font-size: 2rem;
   margin-top: 0;
@@ -279,6 +297,8 @@ h3 {
   padding-bottom:0;
 }
 #about_name_det {
+  width: 100%;
+  margin-left:5%;
   color: gray;
   padding: 0;
   margin: 0;
@@ -305,8 +325,8 @@ footer ul {
 }
 footer p {
   float: left;
-  width: 68.5%;
-  margin: 1% 0 1% 6.5%;
+  width: 100%;
+  margin: 1% 0 1% 1%;
 }
 footer li  {
   list-style: none;
@@ -338,17 +358,17 @@ nav {
 nav img {
   height:77px;
   width: 200px; 
-  margin: 3% 20%;
+  margin: 2% 11%;
 }
 
 /* Form
    ================================================================ */
 .modal {
   background-color: black;
-  z-index: 150;
+  z-index: 250;
   position: absolute;
   clear:both;
-  height: 2580px;
+  height: 2090px;
   width: 100%;
   visibility: hidden;
   opacity: 0;
@@ -364,7 +384,7 @@ nav img {
   visibility: hidden;
   opacity: 0;
   position: fixed;
-  z-index: 155;
+  z-index: 255;
   top: 19%;
   border: 1px solid white;
   padding: 2% 5%;
@@ -412,9 +432,9 @@ form input {
   height: 44px;
   background-color: rgba(255,255,255,0);
   color: black;
-    font-family: 'Advent Pro', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-transform: lowercase;
 }
 .form_left {
   float: left;
@@ -424,11 +444,9 @@ form input {
   float: right;
   width: 60%;
 }
-#form_message {
-  width: 100%;
-  height: 150px;
-  font-size: 1rem;
-}
+/*#form_message {
+
+}*/
 #send {
   clear:both;
   width: 40%;
@@ -436,19 +454,106 @@ form input {
   background-color: rgba(255,255,255,0);
   border: 1px solid #5EC3C5;
   font-family: 'Advent Pro', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
+  font-size: 1.4rem;
   color: #5EC3C5;
   text-transform: uppercase;
   text-align: center;
 }
 #form_message {
+  width: 100%;
+  height: 150px;
   color: black;
   margin: 0;
-  padding: 0;
-  font-size: 1.5rem;
+  padding-top: 20px;
+  font-size: 1rem;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  text-transform: capitalize;
+  background-color: rgba(255,255,255,0);
+  color: black;
+  vertical-align: center;
 }
+/* Hamburger Menu - Mobile Only ================================================================ */
+.hamburger {
+  cursor: pointer;
+  display: none;
+  float: left;
+  width: 9%;
+  margin: 40px 0 5% 4%;
+}
+
+.line {
+  border-bottom: 1px solid white;
+  width: 25px;
+  margin-bottom: 6px;
+}
+
+.line:last-child {
+  margin-bottom: 0;
+}
+.sidebar {
+  width: 180px;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  transform: translateX(-200%);
+  -ms-transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+
+  z-index: 175;
+  -webkit-box-shadow: 25px 14px 26px 19px rgba(0,0,0,0.2);
+  -moz-box-shadow: 25px 14px 26px 19px rgba(0,0,0,0.2);
+    box-shadow: 25px 14px 26px 19px rgba(0,0,0,0.2);
+
+}
+.sidebar li {
+  list-style: none;
+  color: gray;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 2%;
+}
+.sidebar li:hover {
+  cursor: pointer;
+}
+.sidebar a {
+  text-decoration: none;
+  color: gray;
+}
+.sidebar p {
+    color: gray;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 400;
+  margin-left: 8%;
+}
+.sidebar p:hover {
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-transform: none;
+  font-size: 20px;
+}
+
+.sidebar{
+  transition: all 300ms ease-in-out;
+
+}
+
+.active .sidebar {
+  transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
 /*Animations ================================================================ */
 .shop:hover {
   background-color: white;
@@ -477,11 +582,11 @@ nav li:hover {
   width: 100%;
   height: 70px;
 }
-.scrolled .logo>img {
-  width: 50%;
-  height: 50%;
-  margin-top: 3%;
-  margin-left: 30%;
+.scrolled #mini_logo {
+  width: 30%;
+  height: 45%;
+  margin-top: 0;
+  margin-left: 9%;
 }
 .scrolled li {
   margin-top: 1%;
@@ -493,5 +598,205 @@ nav li:hover {
   display: inline-block;
 }
 
+/*Mobile Optimization*/
+@media only screen and (max-width: 1225px) {
+  .modal {
+    height: 2920px;
+  }
+}
+@media only screen and (max-width: 1175px) {
+  .modal {
+    height: 2850px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  h3 {
+    font-size: 4rem;
+    line-height: 3.6rem;
+  }
+  .modal {
+    height: 2775px;
+  }
+/*  #about_name {
+    padding-left: 35%;
+  }*/
+/*  #profile_pic {
+    margin-left: 13%;
+  }*/
+/*  #about_name_det {
+    text-align: center;
+  }*/
+  .about_image {
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 1036) {
+.scrolled #mini_logo {
+    margin-top: 1.5%;
+  }
+  .modal {
+    height: 2705px;
+  }
+}
 
+@media only screen and (max-width: 960) {
+.scrolled #mini_logo {
+    margin-top: 2%;
+  }
+.modal {
+  height: 2705px;
+}
+}
+@media only screen and (max-width: 950px) {
+  .modal {
+    height: 2610px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .modal {
+    height: 2524px;
+  }
+}
+@media only screen and (max-width: 813px) {
+  .shop {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+
+  h3 {
+    font-size: 3rem;
+    line-height: 2.6rem;
+    top: 22%;
+  }
+  .modal {
+    height: 2494px;
+  }
+  footer p {
+    margin-left: 1%;
+  }
+  footer li:last-child {
+    margin-right: 1%;
+  }
+  .video {
+    margin: 8% 10% 8% 10%;
+  }
+  .about_image {
+    margin: 15% 0;
+  }
+/*  #about_name {
+    padding-left: 46%;
+  }
+  #about_name_det {
+    text-align: center;
+    width: 94%;
+    padding-left: 34%;
+  }*/
+}
+@media only screen and (max-width: 700px) {
+  .contact_form {
+    width: 85%;
+    margin: 0 7.5%;
+    top: 5%;
+  }
+  .form_left {
+    float: none;
+    width: 100%;
+  }
+  .form_right {
+    float: none;
+    width: 100%;
+  }
+  .modal {
+    height: 2410px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  nav ul {
+    display: none;
+  }
+  .resume_section img {
+    width: 100%;
+    margin: 2% 0%;
+  }
+  .resume_images {
+    width: 70%;
+    margin: 0 15%;
+  }
+  .resume_section img:first-child {
+    margin-left:0;
+  }
+  .resume_section img:last-child {
+    margin-right:0;
+  }
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+  }
+  .about_image, .about_text{
+    float:none;
+    width: 80%;
+    margin: 3% 10%;
+  }
+  #profile_pic {
+    margin: 12% 10% 0 10%;
+  }
+  #about_name {
+  padding-left:37%;
+  } 
+  #about_name_det {
+    text-align: center;
+    padding-bottom: 10%;
+  }
+  #about_title {
+    line-height: 1.8rem;
+    font-size: 2rem;
+    padding-top: 10%;
+    margin-top: 0;
+  }
+  .designs {
+    width: 100%;
+    margin: 0 0 2% 0;
+  }
+  h1 {
+    font-size: 3.5rem;
+    line-height: 2.8rem;
+  }
+  #background_image {
+    background: none;
+    height: 100%; 
+ }
+  #background_color {
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+  }
+.scrolled #mini_logo {
+  width: 150%;
+  margin: 12% 180%;
+}
+.logo {
+  width: 87%;
+  padding:2% 30% 0 15%;
+}
+.logo img {
+  width: 100%;
+  margin: 0 0;
+}
+.hamburger {
+  display: inline-block;
+}
+.modal {
+  height: 3580px;
+}
+}
+@media only screen and (max-width: 450px) {
+  .modal {
+    height: 3500px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .modal {
+    height: 3250px;
+  }
+}
 

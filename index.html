@@ -36,25 +36,42 @@
 						<input type="text" name="subject" placeholder="Subject" id="form_subject">
 					</div>
 					<div class="form_right">
-						<input type="text" name="message" placeholder="Mesage" maxlength="900" id="form_message" rows="10" collumns="80" wrap="hard">
+<!-- 						<input type="text" name="message" placeholder="Mesage" maxlength="900" id="form_message" rows="200" collumns="200" wrap="hard"> -->
+						<textarea name="message" type="text"placeholder="Message" id="form_message" cols="30" rows="10"></textarea>
 					    <input type="submit" value="Send" id="send">
 				    </div>
 				</form>
 			<p id="form_message" class="hide"> Thanks! You'll be hearing from me soon.</p>
 		</div>
+	<div class="sidebar">
+		<p>X</p>
+		<ul>
+			<li class="li_data" data-section="resume_section">Designs</li>
+			<li> <a href="https://www.etsy.com/shop/FancyShmancyResumes?ref=hdr_shop_menu">Shop</a></li>
+			<!-- <li class="li_data" data-section="video_section" id="tips_li">Tips</li> -->
+			<li class="li_data" data-section="about_section">About</li>
+			<li id="contact" data-section="contact_section">Contact </li>
+		</ul>
+	</div>
+	
 	<div id="background_image">
 		<div id="background_color">
 			<nav>
+				<div class="hamburger">
+				    <div class="line"></div>
+				    <div class="line"></div>
+				    <div class="line"></div>
+			  	</div>
 				<div class="logo">
-				<img src="images/Logo_WebVersion.png" alt="">
+				<img  id="mini_logo"src="images/Logo_WebVersion.png" alt="">
 				</div>
 	<!-- 			<hr> -->
 				<ul>
-					<li data-section="resume_section">Designs</li>
+					<li class="li_data"class="li_data"  data-section="resume_section">Designs</li>
 					<li> <a href="https://www.etsy.com/shop/FancyShmancyResumes?ref=hdr_shop_menu">Shop</a></li>
-					<li data-section="video_section">Tips</li>
-					<li data-section="about_section">About</li>
-					<li id="contact">Contact</li>
+					<!-- <li class="li_data"class="li_data" data-section="video_section">Tips</li> -->
+					<li class="li_data"class="li_data" data-section="about_section">About</li>
+					<li id="contact"data-section="contact_section">Contact</li>
 				</ul>
 			</nav>
 
@@ -68,6 +85,7 @@
 	<!-- <button class="down_arrow"></button> -->
 	<div class="resume_section clearfix">
 		<h1 class="designs">Designs</h1>
+		<p>A collection of modern resume templates.</p>
 		<div class="resume_images clearfix">
 			<img src="images/resumes/black_resume.jpg" alt="">
 			<img src="images/resumes/yellow_resume.jpg" alt="">
@@ -80,16 +98,13 @@
 			<h3>5 Quick Tips for a Standout Resume</h3>
 			<img src="images/girl_ipad.jpeg" alt="">
 			<img src="images/Play_Button.png" alt="" id="play">
-			<!-- <video src="images/girl_ipad.jpeg"></video> -->
+
 		</div>
 	</div>
+
 	<div class="about_section clearfix">
 		<div class="about_wrapper clearfix">
-			<div class="about_image">
-				<img src="images/Profile_Image.png" alt="" id="profile_pic">
-				<p id="about_name">Mischa</p>
-				<p id="about_name_det">brand strategist | designer | web developer</p>
-			</div>
+
 			<div class="about_text">
 				<p id="about_title">About Fancy Schmancy Resumes</p>
 				<p>After shuffling through piles of resumes in search of the right candidate, I have seen my share of both the stellar and the unfortunate. I’m here to help you land in the stellar pile.
@@ -113,15 +128,23 @@
 				Happy job hunting!
 				</p>
 			</div>
+			<div class="about_image">
+				<img src="images/Profile_Image.png" alt="" id="profile_pic">
+				<p id="about_name">Mischa</p>
+				<p id="about_name_det">brand strategist | designer | web developer</p>
+			</div>
 		</div>
 	</div>
 	<footer class="footer">
-		<p> &copy; 2015 This Website was handcrafted by Michelle Spigner. All rights reserved.</p>
-		<ul>
-			<li> <a href="https://www.etsy.com/shop/FancyShmancyResumes?ref=hdr_shop_menu">Shop Page</a></li>
-<!-- 			<li>LinkedIn</li> -->
-			<li> <a href="michellespigner.com">Mischa's Portfolio</a></li>
-		</ul>
+		<p> &copy; 2015 This Website was handcrafted by Michelle Spigner. All rights reserved. | 
+			<a href="https://www.etsy.com/shop/FancyShmancyResumes?ref=hdr_shop_menu">Shop Page | </a>
+			<a href="https://www.etsy.com/shop/FancyShmancyResumes?ref=hdr_shop_menu">Mischa's Portfolio</a>
+		</p>
+<!-- 		<ul>
+			<li> <a href="https://www.etsy.com/shop/FancyShmancyResumes?ref=hdr_shop_menu">Shop Page</a></li> -->
+			<!-- 			<li>LinkedIn</li> -->
+			<!-- 			<li> <a href="michellespigner.com">Mischa's Portfolio</a></li> -->
+			<!-- 		</ul> -->
 	</footer>
 		<script src="jquery/jquery-2.1.4.js"></script>
 		<script src="jquery/main.js"></script>
