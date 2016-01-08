@@ -66,6 +66,11 @@ nav ul {
   z-index: 15;
   margin-top: 25px;
 }
+
+#tips_li {
+  display: none;
+}
+
 .title_section h1 {
   clear: both;
   z-index: 20;
@@ -221,6 +226,7 @@ nav li:last-child {
 .video_section {
   clear:both;
   height:100%;
+  display: none;
 }
 .video {
   position: relative;
@@ -362,7 +368,7 @@ nav img {
   z-index: 250;
   position: absolute;
   clear:both;
-  height: 2990px;
+  height: 2090px;
   width: 100%;
   visibility: hidden;
   opacity: 0;
